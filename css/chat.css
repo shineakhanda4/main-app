@@ -1,0 +1,30 @@
+/* Hide tawk.to's default elements */
+iframe[title="widget-button"], 
+#tawk-bubble-container {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* Your Custom Orange Button */
+.chat-wrapper {
+    position: fixed !important;
+    bottom: 25px !important;
+    right: 100px !important; /* Plenty of space from the orange arrow */
+    width: 60px !important;
+    height: 60px !important;
+    background-color: #FF6600 !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    z-index: 2147483647 !important; /* Maximum possible Z-index */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5) !important;
+}
+
+.chat-wrapper svg {
+    width: 30px !important;
+    height: 30px !important;
+    fill: white !important;
+}
